@@ -1,4 +1,4 @@
-FROM debian:11
+FROM CentOS:9
 RUN apt update -y > /dev/null 2>&1 && apt upgrade -y > /dev/null 2>&1 && apt install locales -y \
 && localedef -i en_SG -c -f UTF-8 -A /usr/share/locale/locale.alias en_SG.UTF-8
 ENV LANG en_SG.utf8
