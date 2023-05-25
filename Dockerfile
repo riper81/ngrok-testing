@@ -5,7 +5,7 @@ ENV LANG en_US.utf8
 RUN apt install ssh wget unzip -y > /dev/null 2>&1
 RUN wget -O ngrok.zip https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.zip > /dev/null 2>&1
 RUN unzip ngrok.zip
-RUN echo "./ngrok config add-authtoken 2QHaWUJSoINhsEryQ9io7fdixpB_46q51AiCpBsPDEiZboCPp &&" >>/1.sh
+RUN echo "./ngrok config add-authtoken 2QHhrfgwpDBz3AybBvZds4tRQoa_3FUhLT8EWzR5gxxK7BYfT &&" >>/1.sh
 RUN echo "./ngrok tcp 22 &>/dev/null &" >>/1.sh
 RUN mkdir /run/sshd
 RUN echo '/usr/sbin/sshd -D' >>/1.sh
